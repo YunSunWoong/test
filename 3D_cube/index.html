@@ -8,6 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="cube">
+            <img src="img/facebook.png" alt="facebook icon img">
+            <img src="img/twitter.png" alt="twitter img">
+            <img src="img/youtube.png" alt="youtube img">
+            <img src="img/instagram.png" alt="instagram img">
+        </div>
+    </div>
+    <script>
+        let deg = 0;
+        setInterval(()=>{
+            deg = deg - 90;
+            document.querySelector(".cube").style.transform = 'rotateX(' + deg + 'deg)';
+        }, 1000)
+    </script>
 </body>
 </html>
